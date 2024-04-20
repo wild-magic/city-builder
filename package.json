@@ -1,8 +1,8 @@
 {
   "name": "city-builder",
-  "productName": "city-builder",
+  "productName": "City Builder",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Some cool Game",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -21,7 +21,11 @@
     "@electron-forge/plugin-fuses": "^7.2.0",
     "@electron/fuses": "^1.7.0",
     "@types/node": "^20.12.4",
+    "@types/react-dom": "^18.2.25",
+    "autoprefixer": "^10.4.19",
     "electron": "29.2.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5.4.3"
   },
   "keywords": [],
@@ -32,7 +36,18 @@
   "license": "MIT",
   "dependencies": {
     "@electron-forge/plugin-vite": "^7.3.1",
+    "@hello-worlds/core": "^0.0.9",
+    "@hello-worlds/planets": "^0.0.23",
+    "@hello-worlds/react": "^0.0.26",
+    "@manapotion/react": "^0.25.0",
+    "@react-three/drei": "^9.103.0",
+    "@react-three/fiber": "^8.16.1",
+    "@types/react": "^18.2.25",
+    "@types/three": "^0.163.0",
     "electron-squirrel-startup": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.163.0",
     "ts-node": "^10.9.2",
     "vite": "^5.2.8"
   }

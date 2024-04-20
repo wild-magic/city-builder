@@ -1,17 +1,19 @@
-import type { ConfigEnv, UserConfig } from 'vite';
-import { defineConfig } from 'vite';
-import { pluginExposeRenderer } from './vite.base.config';
+import type { ConfigEnv, UserConfig } from "vite";
+import { defineConfig } from "vite";
+import { pluginExposeRenderer } from "./vite.base.config";
 
 // https://vitejs.dev/config
 export default defineConfig((env) => {
-  const forgeEnv = env as ConfigEnv<'renderer'>;
+  const forgeEnv = env as ConfigEnv<"renderer">;
   const { root, mode, forgeConfigSelf } = forgeEnv;
-  const name = forgeConfigSelf.name ?? '';
+  const name = forgeConfigSelf.name ?? "";
+
+  console.log({ root, mode, name });
 
   return {
     root,
     mode,
-    base: './',
+    base: "./",
     build: {
       outDir: `.vite/renderer/${name}`,
     },
